@@ -55,7 +55,7 @@ f4 = Frame(background=bg) #3
 
 
 #Creating Elements for Frame1
-gameTitle =Label(f1 ,text="Stone, Paper and Scissors", bg=bg,  fg="white", font=("Calibri", 40, "bold"), pady=50)
+gameTitle =Label(f1 ,text="Stone, Paper and Scissors", bg=bg,  fg="white", font=("Cooper Black", 40, "bold"), pady=50)
 
 
 #Creating Elements for Frame2
