@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 from tkinter import *
@@ -9,7 +6,7 @@ from PIL import ImageTk
 import random
 
 
-# In[2]:
+
 
 
 #our default (rgb) colour
@@ -24,20 +21,17 @@ def smallScreen (event) :
     window.attributes("-fullscreen", False)
 
 def RestartGame():
-    gameTitle.configure(text="Stone, Paper and Scissors", fg="white")
-    global playerScore, computerScore
-    playerScore=0
-    computerScore=0
-    compVsPlayerText.configure(text=f"Player  0                         vs                0  Computer")
+    #TODO: implement this function
+    pass
 
 def QuitGame():
-    window.destroy()
+    #TODO: implement this function
+    pass
 
 def getImage (player, choice , winOrLost):
     return ImageTk.PhotoImage(file=f"./images/{player}/{choice+winOrLost}.jpg")
 
 
-# In[8]:
 
 
 window = Tk()
@@ -116,34 +110,31 @@ window.bind("<f>", fullScreen)
 window.mainloop()
 
 
-# In[7]:
-
-
-def isPlayerScissors(computerChoice):
-    pass
-    
-def isPlayerStone(computerChoice):
-    pass
-    
-def isPlayerPaper(computerChoice):
-    pass
-
-
-def updateImages_ShowScore(playerChoice,computerChoice, score):
-    
-    global playerScore, computerScore
-
-# In[5]:
-
 
 def StartGame(playerChoice):
     
     choices=["stone","scissors", "paper"]
+    #TODO: implement this function
     
 
 
-# In[ ]:
+def isPlayerScissors(computerChoice):
+    #TODO: Implement this function
+    #note : you can delete the hint next line, if you can do it yourself
+    #hint: if compChoice is paper return -1 (for losing), if scissors return 0 (for a draw), if stone return 1 (for winnig) 
+    pass
+    
+def isPlayerStone(computerChoice):
+    #TODO: Implement this function
+    pass
+    
+def isPlayerPaper(computerChoice):
+    #TODO: Implement this function 
+    pass
 
 
-
-
+def updateImages_ShowScore(playerChoice,computerChoice, score):
+    #TODO: update the playerImage and computerImage using .configure() function, you can search for it or ask in the ground if you got stuck
+    #increment the playerScore or computerScore denpending on who won, and update the gameTitle text with .configure(), with something like:
+    #player win! , computer wins :( or match draw 
+    global playerScore, computerScore
